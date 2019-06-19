@@ -2,5 +2,8 @@
 projects/01_update_rotation/build/*
 projects/01_update_rotation/Sophus/build/*
 
-ros_workspace/devel*
-ros_workspace/build*
+projects/02_vio_data_simulation/build/*
+
+ros_workspace/devel/*
+ros_workspace/build/*
+

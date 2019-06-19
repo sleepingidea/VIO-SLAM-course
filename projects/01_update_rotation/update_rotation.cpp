@@ -11,21 +11,6 @@ int main()
     // the current Pose of Rotation with  R&q
     Eigen::Matrix3d current_R = Eigen::AngleAxisd(M_PI/2,  Eigen::Vector3d(1.0, 2.0, 3.0)).toRotationMatrix();  
 
-
-    Eigen::Matrix3d test_R = Eigen::AngleAxisd(M_PI/2,  Eigen::Vector3d(3.0, 2.0, 1.0)).toRotationMatrix(); 
-    Eigen::Vector3d test_P(1,2,3);
-
-    Eigen::Matrix3d  result_R_1,result_R_2;
-    Eigen::Vector3d test_p_1 = (current_R.inverse())*test_P;
-    Eigen::Vector3d test_p_2 = (current_R.transpose())*test_P;
-
-    cout << "test1 \r\n" << test_p_1 << endl;
-    cout << "test2 \r\n" << test_p_2 << endl;
-    
-
-     
-
-
     Sophus::SO3   current_SO3_R(current_R);
     cout << "\r\n the current Pose of R: \r \n" << current_R <<endl;
 
