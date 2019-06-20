@@ -14,6 +14,7 @@
 
 struct MotionData
 {
+    // 这个宏在new一个对象时会总是返回一个对齐的指针
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     double timestamp;
     Eigen::Matrix3d Rwb;
